@@ -13,3 +13,8 @@ int     ft_str_is_lowercase(char *str)
         }
         return (1);
 }
+int main()
+{
+        ft_str_is_lowercase("i like cookies");
+        return 0;
+}

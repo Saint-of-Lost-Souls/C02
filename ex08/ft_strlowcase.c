@@ -3,7 +3,6 @@
 
 char    ft_strlowcase( char *str)
 {
-
         char whitespace;
 
         whitespace = ' ';
@@ -22,17 +21,13 @@ char    ft_strlowcase( char *str)
         }
         return *str;
 }
-
-
-
-
 int main()
 {
         char string_1[] = "THE CAKE IS A LIE";
         char string_2[] = "tHe CaKe Is LiE";
         char converted;
 
-        converted = ft_strlowcase(string_2);
-        printf("The converted string is: %s", string_2);
+        converted = ft_strlowcase(string_1);
+        printf("The converted string is: %s", string_1);
         return 0;
 }

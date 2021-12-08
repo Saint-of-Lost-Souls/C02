@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 int     ft_str_is_lowercase(char *str)
 {
         while (*str != '\0')
@@ -14,7 +16,17 @@ int     ft_str_is_lowercase(char *str)
         return (1);
 }
 int main()
-{
-        ft_str_is_lowercase("i like cookies");
-        return 0;
-}
+ {
+        char string[] = "thecakeisalie";
+
+        int result = ft_str_is_lowercase(string);
+
+        if(result == 1)
+        {
+                printf("string is lowercase");                   
+        }
+        else{
+                printf("string isn't lowercase");                   
+        }
+        return 0;      
+ }

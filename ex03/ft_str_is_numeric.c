@@ -1,3 +1,6 @@
+#include <stdio.h>
+
+
 int     ft_str_is_numeric(char *str)
 {
         while (*str != '\0')
@@ -15,6 +18,16 @@ int     ft_str_is_numeric(char *str)
 }
 int main()
 {
-        ft_str_is_numeric("1234567890");
+        char string[] = "1234567890";
+
+        int result = ft_str_is_numeric(string);
+
+        if(result == 1)
+        {
+                printf("string is numeric");
+        }
+        else{
+                printf("string isn't numeric");
+        }
         return 0;
 }

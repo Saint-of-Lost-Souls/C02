@@ -1,4 +1,3 @@
-#include <unistd.h>
 #include <stdio.h>
 
 char    ft_strupcase(char *str)
@@ -26,7 +25,7 @@ int main()
 
         converted = ft_strupcase(string_2);
 
+        printf("The converted string is: %s", string_2);
 
-        write(1, &string_2, sizeof(string_2));
         return 0;
 }

@@ -1,9 +1,7 @@
-#include <unistd.h>
 #include <stdio.h>
 
 char    ft_strlowcase( char *str)
-{
-        
+{        
         while (*str != '\0')
         {
                 if (*str >= 'A' && *str <= 'Z')
@@ -26,6 +24,7 @@ int main()
         char converted;
 
         converted = ft_strlowcase(string_1);
+
         printf("The converted string is: %s", string_1);
         return 0;
 }

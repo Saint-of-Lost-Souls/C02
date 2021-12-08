@@ -16,7 +16,7 @@ char    ft_strupcase(char *str)
                 }
                 str++;
         }
-        return *str;
+        return (*str);
 }
 int main()
 {

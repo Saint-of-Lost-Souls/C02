@@ -21,9 +21,8 @@ int main()
 {
         char string_1[] = "THE CAKE IS A LIE";
         char string_2[] = "tHe CaKe Is LiE";
-        char converted;
-
-        converted = ft_strlowcase(string_1);
+        
+        ft_strlowcase(string_1);
 
         printf("The converted string is: %s", string_1);
         return 0;

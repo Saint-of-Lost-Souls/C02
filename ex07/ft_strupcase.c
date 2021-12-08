@@ -21,9 +21,8 @@ int main()
 {
         char string_1[] = "thecakeisalie";
         char string_2[] = "ThE cAkE iS a LiE";
-        char converted;
-
-        converted = ft_strupcase(string_2);
+        
+        ft_strupcase(string_2);
 
         printf("The converted string is: %s", string_2);
 

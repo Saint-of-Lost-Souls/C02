@@ -3,9 +3,6 @@
 
 char    ft_strupcase(char *str)
 {
-        char whitespace;
-
-        whitespace = ' ';
         while (*str != '\0')
         {
                 if (*str >= 'a' && *str <= 'z')
@@ -13,7 +10,7 @@ char    ft_strupcase(char *str)
                         *str -= 32;
                         //write(1, str, 1);
                 }
-                if (*str >= 'A' && *str <= 'Z' || *str == whitespace)
+                if (*str >= 'A' && *str <= 'Z')
                 {
                         //write(1, str, 1);
                 }

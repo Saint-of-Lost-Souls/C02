@@ -13,3 +13,8 @@ int     ft_str_is_numeric(char *str)
         }
         return (1);
 }
+int main()
+{
+        ft_str_is_numeric("1234567890");
+        return 0;
+}

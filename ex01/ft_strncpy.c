@@ -1,13 +1,19 @@
 #include <stdio.h>
-#include <string.h>
 
-char    *ft_strncpy(char *dest, char *src, unsigned int n)
+char *ft_strncpy(char *dest, char *src, unsigned int n)
 {
-        memset(dest, '\0', sizeof(src));
-        strcpy(dest, src, n);
-        return (dest);
-}
+    char *start; 
 
+    start = dest;
+    while (*src != '\0' && *dest < n)
+    {
+        *dest = *src;
+        dest++;
+        src++;
+     }          
+    *dest = '\0'; // add '\0' at the end
+    return (start);
+}
 
 int main ()
 {

@@ -1,19 +1,24 @@
 #include <stdio.h>
-#include <string.h>
 
-char    *ft_strcpy(char *dest, char *src)
+char *ft_strcpy(char *dest, char *src)
 {
-        memset(dest, '\0', sizeof(src));
-        strcpy(dest, src);
-        return dest;
+    char *start; 
+
+    start = dest;
+    while(*src != '\0')
+    {
+        *dest = *src;
+        dest++;
+        src++;
+    }
+    *dest = '\0';
+    return (start);
 }
-
-
 int main ()
 {
         char src[] = "Some bullshit string";
         char dest[sizeof(src)];
-
+        
         ft_strcpy(dest, src);
 
         printf("Final copied string : %s\n", dest);

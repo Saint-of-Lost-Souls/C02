@@ -3,9 +3,7 @@
 
 char    ft_strlowcase( char *str)
 {
-        char whitespace;
-
-        whitespace = ' ';
+        
         while (*str != '\0')
         {
                 if (*str >= 'A' && *str <= 'Z')
@@ -13,7 +11,7 @@ char    ft_strlowcase( char *str)
                         *str += 32;
                         //write(1, str, 1);
                 }
-                if (*str >= 'a' && *str <= 'z' || *str == whitespace)
+                if (*str >= 'a' && *str <= 'z')
                 {
                         //write(1, str, 1);
                 }

@@ -15,8 +15,8 @@ char *ft_strcpy(char *dest, char *src)
 }
 int main ()
 {
-        char src[] = "i like cookies";
-        char dest[sizeof(src)];
+        char src[15] = "i like cookies";
+        char dest[15];
         
         ft_strcpy(dest, src);
 

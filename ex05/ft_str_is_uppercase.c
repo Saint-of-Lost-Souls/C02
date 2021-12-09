@@ -2,24 +2,28 @@
 
 int     ft_str_is_uppercase(char *str)
 {
-        while (*str != '\0')
+        int i;
+
+        i = 0;
+        while (str[i] != '\0')
         {
-                if (*str >= 'A' && *str <= 'Z')
+                if (str[i] >= 'A' && str[i] <= 'Z')
                 {                        
                 }
                 else
                 {                
                         return (0);
                 }
-                str++;
+                i++;
         }
         return (1);
 }
 int main()
  {
         char string[] = "ILIKECOOKIES";
+        char string_1[] = "ilikecookies";
 
-        int result = ft_str_is_uppercase(string);
+        int result = ft_str_is_uppercase(string_1);
 
         if(result == 1)
         {

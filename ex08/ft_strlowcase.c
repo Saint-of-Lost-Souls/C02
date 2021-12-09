@@ -2,16 +2,17 @@
 
 char    ft_strlowcase( char *str)
 {        
-        while (*str != '\0')
+        int i;
+
+        i = 0;
+        while (str[i] != '\0')
         {
-                if (*str >= 'A' && *str <= 'Z')
+                if (str[i] >= 'A' && str[i] <= 'Z')
                 {
-                        *str += 32;
-                        //write(1, str, 1);
+                        *str += 32;                    
                 }
-                if (*str >= 'a' && *str <= 'z')
-                {
-                        //write(1, str, 1);
+                if (str[i] >= 'a' && str[i] <= 'z')
+                {                        
                 }
                 str++;
         }
@@ -20,10 +21,10 @@ char    ft_strlowcase( char *str)
 int main()
 {
         char string_1[] = "THE CAKE IS A LIE";
-        char string_2[] = "tHe CaKe Is LiE";
+        char string_2[] = "tHe CaKe Is a LiE";
         
-        ft_strlowcase(string_1);
+        ft_strlowcase(string_2);
 
-        printf("The converted string is: %s", string_1);
+        printf("The converted string is: %s", string_2);
         return 0;
 }

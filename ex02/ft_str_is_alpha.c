@@ -1,18 +1,20 @@
 #include <stdio.h>
 
 int     ft_str_is_alpha(char *str)
+{       
+        int i;
 
-{
-        while (*str != '\0')
+        i = 0;        
+        while (str[i] != '\0')
         {
-                if (*str >= 'A' && *str <= 'Z' || *str >= 'a' && *str >= 'A')
+                if (str[i] >= 'A' && str[i] <= 'Z' || str[i] >= 'a' && str[i] <= 'z')
                 {                        
                 }
                 else
                 {
                         return (0);
                 }
-                str++;
+                i++;
         }
         return (1);
 }
@@ -20,8 +22,9 @@ int     ft_str_is_alpha(char *str)
  int main()
  {
         char string_1[] = "tHeCaKeIsAlIe";
+        char string_2[] = "1234567890";
 
-        int result = ft_str_is_alpha(string_1);
+        int result = ft_str_is_alpha(string_2);
 
         if(result == 1)
         {

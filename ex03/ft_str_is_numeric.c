@@ -2,22 +2,26 @@
 
 int     ft_str_is_numeric(char *str)
 {
-        while (*str != '\0')
+        int i;
+
+        i = 0;
+        while (str[i] != '\0')
         {
-                if (*str >= '0' && *str <= '9')
+                if (str[i] >= '0' && str[i] <= '9')
                 {
                 }
                 else
                 {
                         return (0);
                 }
-                str++;
+                i++;
         }
         return (1);
 }
 int main()
 {
         char string[] = "1234567890";
+        char string_1[] = "i like cookies";
 
         int result = ft_str_is_numeric(string);
 

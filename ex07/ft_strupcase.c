@@ -2,18 +2,19 @@
 
 char    ft_strupcase(char *str)
 {
-        while (*str != '\0')
+        int i;
+
+        i = 0;
+        while (str[i] != '\0')
         {
-                if (*str >= 'a' && *str <= 'z')
+                if (str[i] >= 'a' && str[i] <= 'z')
                 {
-                        *str -= 32;
-                        //write(1, str, 1);
+                        str[i] -= 32;        
                 }
-                if (*str >= 'A' && *str <= 'Z')
-                {
-                        //write(1, str, 1);
+                if (str[i] >= 'A' && str[i] <= 'Z')
+                {                
                 }
-                str++;
+                i++;
         }
         return (*str);
 }
@@ -22,9 +23,9 @@ int main()
         char string_1[] = "thecakeisalie";
         char string_2[] = "ThE cAkE iS a LiE";
         
-        ft_strupcase(string_2);
+        ft_strupcase(string_1);
 
-        printf("The converted string is: %s", string_2);
+        printf("The converted string is: %s", string_1);
 
         return 0;
 }

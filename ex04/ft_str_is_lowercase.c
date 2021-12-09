@@ -14,7 +14,7 @@ int     ft_str_is_lowercase(char *str)
                 {
                         return (0);
                 }
-        i++;
+                i++;
         }
         return (1);
 }

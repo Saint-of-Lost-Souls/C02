@@ -24,7 +24,7 @@ int     ft_str_is_alpha(char *str)
         char string_1[] = "tHeCaKeIsAlIe";
         char string_2[] = "1234567890";
 
-        int result = ft_str_is_alpha(string_2);
+        int result = ft_str_is_alpha(string_1);
 
         if(result == 1)
         {

@@ -16,16 +16,16 @@ char    ft_strupcase(char *str)
                 }
                 i++;
         }
-        return (*str);
+        return (0);
 }
 int main()
 {
         char string_1[] = "thecakeisalie";
         char string_2[] = "ThE cAkE iS a LiE";
         
-        ft_strupcase(string_1);
+        ft_strupcase(string_2);
 
-        printf("The converted string is: %s", string_1);
+        printf("The converted string is: %s", string_2);
 
         return 0;
 }

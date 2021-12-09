@@ -9,12 +9,9 @@ char    ft_strlowcase( char *str)
         {
                 if (str[i] >= 'A' && str[i] <= 'Z')
                 {
-                        *str += 32;                    
-                }
-                if (str[i] >= 'a' && str[i] <= 'z')
-                {                        
-                }
-                str++;
+                        str[i] += 32;                    
+                }                
+                i++;
         }
         return (str);
 }

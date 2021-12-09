@@ -2,9 +2,6 @@
 
 char *ft_strcpy(char *dest, char *src)
 {
-    char *start; 
-
-    start = dest;
     while(*src != '\0')
     {
         *dest = *src;
@@ -12,7 +9,7 @@ char *ft_strcpy(char *dest, char *src)
         src++;
     }
     *dest = '\0';
-    return (start);
+    return (dest);
 }
 int main ()
 {

@@ -16,7 +16,7 @@ char    ft_strlowcase( char *str)
                 }
                 str++;
         }
-        return (0);
+        return (str);
 }
 int main()
 {

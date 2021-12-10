@@ -21,7 +21,6 @@ int     ft_str_is_numeric(char *str)
 int main()
 {
         char string[] = "1234567890";
-        char string_1[] = "i like cookies";
 
         int result = ft_str_is_numeric(string);
 

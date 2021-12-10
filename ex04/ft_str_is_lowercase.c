@@ -20,7 +20,6 @@ int     ft_str_is_lowercase(char *str)
 }
 int main()
  {
-        char string[] = "thecakeisalie";
         char string_1[] = "THECAKEISALIE";
 
         int result = ft_str_is_lowercase(string_1);

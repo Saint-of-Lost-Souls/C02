@@ -13,11 +13,11 @@ char    ft_strupcase(char *str)
                 }                
                 i++;
         }
-        return (str);
+        return (*str);
 }
 int main()
 {
-        char string_1[] = "thecakeisalie";
+
         char string_2[] = "ThE cAkE iS a LiE";
         
         ft_strupcase(string_2);

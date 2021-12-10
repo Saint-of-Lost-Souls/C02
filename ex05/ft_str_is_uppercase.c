@@ -21,9 +21,9 @@ int     ft_str_is_uppercase(char *str)
 int main()
  {
         char string[] = "ILIKECOOKIES";
-        char string_1[] = "ilikecookies";
 
-        int result = ft_str_is_uppercase(string_1);
+
+        int result = ft_str_is_uppercase(string);
 
         if(result == 1)
         {

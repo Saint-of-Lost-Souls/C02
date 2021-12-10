@@ -13,11 +13,10 @@ char    ft_strlowcase(char *str)
                 }                
                 i++;
         }
-        return (str);
+        return (*str);
 }
 int main()
 {
-        char string_1[] = "THE CAKE IS A LIE";
         char string_2[] = "tHe CaKe Is a LiE";
         
         ft_strlowcase(string_2);

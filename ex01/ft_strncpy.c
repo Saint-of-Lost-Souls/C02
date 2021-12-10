@@ -20,7 +20,7 @@ int main ()
         char dest[sizeof(src)];
         unsigned int n;
 
-        n = 3;
+        n = 10;
         ft_strncpy(dest, src, n);
 
         printf("Final copied string : %s\n", dest);

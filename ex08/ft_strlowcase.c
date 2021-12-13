@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-char    ft_strlowcase(char *str)
+char    *ft_strlowcase(char *str)
 {        
         int i;
 
@@ -13,7 +13,7 @@ char    ft_strlowcase(char *str)
                 }                
                 i++;
         }
-        return (*str);
+        return (str);
 }
 int main()
 {

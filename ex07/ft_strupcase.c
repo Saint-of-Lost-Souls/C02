@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-char    ft_strupcase(char *str)
+char    *ft_strupcase(char *str)
 {
         int i;
 
@@ -11,9 +11,9 @@ char    ft_strupcase(char *str)
                 {
                         str[i] -= 32;        
                 }                
-                i++;
+                str++;
         }
-        return (*str);
+        return (str);
 }
 int main()
 {

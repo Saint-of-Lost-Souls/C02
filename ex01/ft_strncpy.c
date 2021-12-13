@@ -5,7 +5,7 @@ char *ft_strncpy(char *dest, char *src, unsigned int n)
     unsigned int i;
 
     i = 0;
-    while (src[i] != '\0' && i < n)
+    while (src[i] != '\0' && i <= n)
     {
         dest[i] = src[i];  
         i++;
@@ -20,7 +20,7 @@ int main ()
         char dest[sizeof(src)];
         unsigned int n;
 
-        n = 10;
+        n = 5;
         ft_strncpy(dest, src, n);
 
         printf("Final copied string : %s\n", dest);
